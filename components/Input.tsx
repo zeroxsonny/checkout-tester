@@ -30,6 +30,16 @@ export const Input: FC<InputProps> = ({
         { label && <label>{label}</label> }
         <input
         className={styles.input}
+        type={type}
+        placeholder={placeholder}
+        id={id}
+        name={name}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+        data-testid="input"
+        disabled={disabled}
+        {...rest}
         />
         </>
     );
