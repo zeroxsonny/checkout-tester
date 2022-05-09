@@ -35,6 +35,7 @@ export const Review: FC<ReviewProps> = ({
         <form
         onSubmit={handleSubmit}
         >
+            <Input/>
         </form>
     );
 }
