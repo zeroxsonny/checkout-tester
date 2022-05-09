@@ -35,7 +35,51 @@ export const Review: FC<ReviewProps> = ({
         <form
         onSubmit={handleSubmit}
         >
-            <Input/>
+            <Input 
+            type="text"
+            id="review-form-name"
+            data-testid="review-form-name"
+            placeholder="name"
+            touched={touched.name}
+            label="Name"
+            fieldRequired
+            {...getFieldProps('name')}
+            />
+
+            <Input 
+            type="email"
+            id="review-form-email"
+            data-testid="review-form-email"
+            placeholder="Email"
+            touched={touched.email}
+            label="Email"
+            fieldRequired
+            {...getFieldProps('email')}
+            />
+
+            <Input 
+            type="number"
+            id="review-form-rating"
+            data-testid="review-form-rating"
+            placeholder="Rating"
+            touched={touched.rating}
+            label="Rating"
+            fieldRequired
+            {...getFieldProps('rating')}
+            />
+
+            <Input 
+            type="text"
+            id="review-form-comment"
+            data-testid="review-form-comment"
+            placeholder="Email"
+            touched={touched.comment}
+            label="Email"
+            fieldRequired
+            {...getFieldProps('comment')}
+            />
+
+            <button>Submit</button>          
         </form>
     );
 }
