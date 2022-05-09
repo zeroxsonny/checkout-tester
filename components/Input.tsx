@@ -41,6 +41,7 @@ export const Input: FC<InputProps> = ({
         disabled={disabled}
         {...rest}
         />
+        { error && touched && <p>{error}</p>}
         </>
     );
 }
