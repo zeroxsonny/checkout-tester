@@ -9,7 +9,6 @@ export type InputType =
 export interface BaseFormInputProps {
     id: string;
     name: string;
-    customClass?: string;
     disabled?: boolean;
     onChange?: ChangeEventHandler;
     onBlur?: FocusEventHandler;
