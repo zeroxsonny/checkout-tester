@@ -16,7 +16,6 @@ export const Input: FC<InputProps> = ({
     onChange,
     onBlur,
     value,
-    error,
     touched,
     label,
     fieldRequired,
@@ -41,7 +40,6 @@ export const Input: FC<InputProps> = ({
         disabled={disabled}
         {...rest}
         />
-        { error && touched && <p>{error}</p>}
         </>
     );
 }
